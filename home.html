@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhayz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="cursor"></div>
+    <div id="trail"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="counter-wrapper">
+            <div class="counter">0%</div>
+        </div>
+        <div class="shading"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-overlay">
+            <div class="menu-close">
+                <span>✕</span>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <div class="menu-line"></div>
+                    <a href="project.html" class="split-text">Projects</a>
+                </li>
+                <li>
+                    <div class="menu-line"></div>
+                    <a href="#contact" class="split-text">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-bg"></div>
+            <div class="content">
+                <p class="split-text intro">I Am</p>
+                <h1 class="split-text">Lasisi Raphael</h1>
+                <p class="distort-text subtitle">A UI UX Designer, Brand Designer and a Web Developer based in Lagos.</p>
+            </div>
+            <svg class="constellation" viewBox="0 0 1440 300">
+                <path class="tracker-path" fill="none" stroke="#33ff00" stroke-width="2" stroke-dasharray="0 1000" d="M0,250 Q360,50 720,250 T1440,150" />
+                <circle cx="360" cy="50" r="5" fill="#33ff00" />
+                <circle cx="720" cy="250" r="5" fill="#33ff00" />
+                <circle cx="1080" cy="150" r="5" fill="#33ff00" />
+            </svg>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="split-text section-title">[Essence]</h2>
+            <div class="content">
+                <p class="distort-text">I sculpt digital realms with precision—web artistry, UI/UX mastery, and brand elevation define my craft.</p>
+                <div class="video-container" data-tilt>
+                    <video id="myVideo" autoplay muted loop>
+                        <source src="your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button class="custom-button" id="toggleButton">Pause</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="split-text section-title">[Arsenal]</h2>
+            <div class="content">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="animated-icon html-css-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 20 L10 50 L30 80" stroke="#33ff00" stroke-width="6" fill="none" stroke-linecap="round" class="bracket-left"/>
+                                <path d="M70 20 L90 50 L70 80" stroke="#33ff00" stroke-width="6" fill="none" stroke-linecap="round" class="bracket-right"/>
+                                <circle cx="50" cy="50" r="3" fill="#ffffff" class="flow-dot"/>
+                            </svg>
+                        </div>
+                        <span class="skill-label distort-text">HTML/CSS</span>
+                        <div class="skill-counter distort-text" data-progress="90">0%</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="animated-icon ui-ux-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 50 Q50 20 80 50 Q50 80 20 50 Z" fill="none" stroke="#33ff00" stroke-width="4" class="eye-outline"/>
+                                <circle cx="50" cy="50" r="8" fill="#33ff00" class="pupil"/>
+                                <line x1="70" y1="70" x2="85" y2="85" stroke="#33ff00" stroke-width="4" class="magnifier-handle"/>
+                                <circle cx="60" cy="60" r="10" fill="none" stroke="#33ff00" stroke-width="4" class="magnifier-circle"/>
+                            </svg>
+                        </div>
+                        <span class="skill-label distort-text">UI/UX Design</span>
+                        <div class="skill-counter" data-progress="85">0%</div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="animated-icon js-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="35" y="35" width="30" height="30" rx="3" fill="none" stroke="#33ff00" stroke-width="3" class="processor-core"/>
+                                <path d="M10 30 H35 M90 30 H65 M10 70 H35 M90 70 H65" stroke="#33ff00" stroke-width="2" stroke-dasharray="5,5" class="circuit-line"/>
+                                <path d="M30 10 V35 M70 10 V35 M30 90 V65 M70 90 V65" stroke="#33ff00" stroke-width="2" stroke-dasharray="5,5" class="circuit-line"/>
+                                <circle cx="35" cy="35" r="2" fill="#ffffff" class="quantum-node"/>
+                                <circle cx="65" cy="35" r="2" fill="#ffffff" class="quantum-node"/>
+                                <circle cx="35" cy="65" r="2" fill="#ffffff" class="quantum-node"/>
+                                <circle cx="65" cy="65" r="2" fill="#ffffff" class="quantum-node"/>
+                                <circle cx="50" cy="50" r="5" fill="none" stroke="#ffffff" stroke-width="2" class="energy-pulse"/>
+                            </svg>
+                        </div>
+                        <span class="skill-label distort-text">JavaScript</span>
+                        <div class="skill-counter" data-progress="75">0%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2 class="split-text section-title">[Works]</h2>
+            <div class="content">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="animated-icon works-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 20 H80 M20 40 H80 M20 60 H80 M20 80 H80 M20 20 V80 M40 20 V80 M60 20 V80 M80 20 V80" stroke="#33ff00" stroke-width="1.5" class="blueprint-grid"/>
+                                <circle cx="50" cy="50" r="3" fill="#33ff00" class="central-node"/>
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="50" cy="50" r="25" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="65" cy="50" r="2" fill="#ffffff" class="orbit-point"/>
+                            </svg>
+                        </div>
+                        <span class="moving-text">WEB DEVELOPMENT</span>
+                        <h3 class="split-text">Astral Web</h3>
+                        <p class="distort-text">Weaving interactive experiences into the digital frontier.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="animated-icon works-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 20 H80 M20 40 H80 M20 60 H80 M20 80 H80 M20 20 V80 M40 20 V80 M60 20 V80 M80 20 V80" stroke="#33ff00" stroke-width="1.5" class="blueprint-grid"/>
+                                <circle cx="50" cy="50" r="3" fill="#33ff00" class="central-node"/>
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="50" cy="50" r="25" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="65" cy="50" r="2" fill="#ffffff" class="orbit-point"/>
+                            </svg>
+                        </div>
+                        <span class="moving-text">BRAND DESIGNING</span>
+                        <h3 class="split-text">Ethereal Brand</h3>
+                        <p class="distort-text">A signature carved in timeless elegance.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="animated-icon works-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 20 H80 M20 40 H80 M20 60 H80 M20 80 H80 M20 20 V80 M40 20 V80 M60 20 V80 M80 20 V80" stroke="#33ff00" stroke-width="1.5" class="blueprint-grid"/>
+                                <circle cx="50" cy="50" r="3" fill="#33ff00" class="central-node"/>
+                                <circle cx="50" cy="50" r="15" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="50" cy="50" r="25" fill="none" stroke="#33ff00" stroke-width="1" stroke-dasharray="5" class="orbit-path"/>
+                                <circle cx="65" cy="50" r="2" fill="#ffffff" class="orbit-point"/>
+                            </svg>
+                        </div>
+                        <span class="moving-text">WEB DESIGNING</span>
+                        <h3 class="split-text">Ethereal UI/UX</h3>
+                        <p class="distort-text">Engineering intuitive interfaces for exceptional user journeys.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   <section id="testimonials" class="section testimonials-section">
+    <h2 class="section-title">[Echoes]</h2>
+    <div class="content">
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <div class="testimonial-item">
+                    <p class="quote">"Lasisi’s craft is a symphony of form and function."</p>
+                    <p class="author">— Voice of Vision</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"His designs are a masterclass in elegance and efficiency."</p>
+                    <p class="author">— Design Enthusiast</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"Working with Lasisi was a transformative experience for our brand."</p>
+                    <p class="author">— Satisfied Client</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="quote">"A visionary who brings ideas to life with precision."</p>
+                    <p class="author">— Creative Partner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="split-text section-title">[Reach]</h2>
+            <div class="content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2025 Lasisi Raphael</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
